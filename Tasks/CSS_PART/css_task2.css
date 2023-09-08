@@ -1,0 +1,257 @@
+body, html{
+    font-family: 'Times New Roman', Times, serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+    margin-left: 100px;
+}
+.navigation{
+    position: relative;
+    height: 500px;
+    width: 70px;
+    background:#2b343b;
+    box-shadow: 6px 0 0 rgb(223, 136, 223); 
+    overflow-x: hidden;  
+    transition: width 0.5s;
+    border-radius: 14px;
+}
+.navigation:hover{
+    width: 300px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li.active{
+    background: rgb(223, 136, 223);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-left: 10px solid #2b343b
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 rgb(223, 136, 223);
+    background: #2b343b;
+
+}
+.navigation ul li.active a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 rgb(223, 136, 223);
+    background:#2b343b;
+
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation ul li a .icon img{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+.navigation ul li a  .title{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    height: 60px;
+    line-height: 60px;
+    white-space:  nowrap;
+}
+.container {
+    background-color: #f8f8f8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black ;
+    
+}
+.container-horizontal{
+    background-color: #f8f8f8;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-horizontal h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#h2{
+    color: black;
+    margin-top: 80px;
+    font-size: 18px;
+}
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px; 
+    transition: transform 0.3s; 
+}
+
+a:hover img {
+    transform: scale(1.1); 
+}
+
+div.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box-hor ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    border-radius: 20px;
+    width: 100%;            
+    height: 100%;
+    background: #fff;
+    box-shadow:  0 10px 30px rgba(0, 0, 0,.3);  
+    padding: 10px;
+    
+}
+.box-hor ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.box-hor ul li:last-child{
+    border-right: none;
+}
+.box-hor ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+.box-hor ul li a .icon{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background:#fff;
+    margin: 0 auto 10px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.box-hor ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 23px;
+    transition: 0.5s;
+    color: #000;
+
+}
+.box-hor ul li  .icon .fa:last-child{
+    color: #e91e63;
+}
+.box-hor ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+
+}
+.box-hor ul li a .icon .xa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 19px;
+    transition: 0.5s;
+    color: #000;
+
+}
+.box-hor ul li  .icon .xa:last-child{
+    color: #e91e63;
+}
+.box-hor ul li a:hover .icon .xa{
+    transform: translateY(-100%);
+
+}
+.box-hor ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.box-hor ul li a .name span{
+    display: block;
+    position: relative;
+    outline-offset: #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+.box-hor ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63 ;
+}
+.box-hor ul li a:hover .name span{
+    transform: translateY(20px);
+}
+h1{
+    font-size: 28px;
+}

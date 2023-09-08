@@ -1,0 +1,146 @@
+body, html{
+    font-family: 'Times New Roman', Times, serif;
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#not{
+display: block;
+width: 100px;
+margin: 0 auto;
+}
+
+p#id2{
+    width:400px;
+    text-align:right;
+    padding-left: 300px;
+
+}
+#id3 {
+    width: 200%;
+}
+.cool-button {
+    background: linear-gradient(45deg, #0077FF, #00BBFF);
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.cool-button:hover {
+    background: linear-gradient(45deg, #0055AA, #0099CC);
+}
+
+.login-link {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #0077FF;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+#not{
+display: block;
+width: 100px;
+margin: 0 auto;
+}
+
+p#id2{
+    width:400px;
+    text-align:right;
+    padding-left: 100px;
+
+}
+.styled-table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+}
+.styled-table td:first-child {
+    min-width: 150px;  
+    white-space: nowrap;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 45px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+.big-input {
+    font-size: 16px;
+    padding: 6px;
+    width: 100%;
+}
+
+div.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    width: 65%;
+    text-align: center;
+}
+#h2{
+    text-align: center;
+    font-size: 30px;
+    
+    
+}
+img {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px; 
+    transition: transform 0.3s; 
+}
+
+a:hover img {
+    transform: scale(1.1); 
+}
+
+div.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

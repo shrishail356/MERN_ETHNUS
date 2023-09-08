@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+div.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box {
+    background-color: white;
+    padding: 60px 105px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);   
+}
+div.inner-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    width: 85%;
+    border: 2px solid black;
+    text-align: left;
+}
+h1{
+    text-align: center;
+}
+#h1{
+    text-align: center;
+}
+ul#list {
+    list-style-position: inside;
+    margin-left: 25px;
+    padding: 0;
+    text-align: left;
+}
+#h2{
+    font-weight: bold;
+}
+ul#list > li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+ul#inner-list {
+    list-style-type: circle;
+    margin: 0 0 0 20px; 
+    padding: 0;
+}
+
+ul#inner-list > li {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px; 
+    transition: transform 0.3s; 
+}
+
+a:hover img {
+    transform: scale(1.1); 
+}
+
+div.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

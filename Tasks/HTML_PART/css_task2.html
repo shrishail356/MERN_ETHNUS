@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK 2</title>
+    <script src="https://kit.fontawesome.com/5fb98c577d.js" crossorigin="anonymous"></script>
+    <link href="../CSS_PART/css_task2.css" type="text/css" rel="stylesheet">
+</head>
+<body> 
+    <div class="container">
+    <h1><u>Vertical Navigation Bar</u></h1>    
+    <div class="navigation">
+        <ul>
+            <li class="list active" id="home">
+                <a href="#">
+                    <span class="icon">
+                        <img src="../Assets/home2.png" width="20" height="20"  >
+                    </span>
+                    <span class="title">HOME</span>
+                </a>
+            </li>
+            <li class="list" id="java">
+                <a href="#">
+                    <span class="icon"><img src="../Assets/java1.png" width="20" height="20" ></span>
+                    <span class="title">JAVA</span>
+                </a>
+            </li>
+            <li class="list" id="html">
+                <a href="#">
+                    <span class="icon"><img src="../Assets/html1.png" width="20" height="20"></span>
+                    <span class="title">HTML</span>
+                </a>
+            </li>
+            <li class="list" id="css">
+                <a href="#">
+                    <span class="icon"><img src="../Assets/css2.png" width="20" height="20"></span>
+                    <span class="title">CSS</span>
+                </a>
+            </li>
+            <li class="list" id="bootstrap">
+                <a href="#">
+                    <span class="icon"><img src="../Assets/bootstap1.png" width="20" height="20"></span>
+                    <span class="title">Bootstrap</span>
+                </a>
+            </li>
+        </ul>
+    </div>   
+    </div>
+    <div class="container-horizontal">
+        <h1>CSS TASK 2</h1>
+        <br/>
+        <h1><u>Horizontal Navigation Bar</u></h1>
+        <div class="box-hor">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class=" xa fa-solid fa-house "></i>
+                            <i class="xa fa-solid fa-house "></i>
+                        </div>
+                        <div class="name"><span data-text="Home">Home </span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-brands fa-html5 fa-xl"></i>
+                            <i class="fa fa-brands fa-html5 fa-xl"></i>
+                        </div>
+                        <div class="name"><span data-text="Html">Html</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="xa fa-brands fa-java fa-2xl"></i>
+                            <i class="xa fa-brands fa-java fa-2xl"></i>
+                        </div>
+                        <div class="name"><span data-text="Java">Java </span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-brands fa-css3-alt fa-xl"></i>
+                            <i class="fa fa-brands fa-css3-alt fa-xl"></i>
+                        </div>
+                        <div class="name"><span data-text="Css">Css</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-brands fa-bootstrap fa-xl"></i>
+                            <i class="fa fa-brands fa-bootstrap fa-xl"></i>
+                        </div>
+                        <div class="name"><span data-text="Bootstrap">Bootstrap</span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <p id="h2">Connect with me on:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/shrishailpatil000/" target="_blank">
+                    <img src="../Assets/icons8-instagram-50.png"/>
+                </a>
+                <a href="https://twitter.com/ShrishailMPati3" target="_blank">
+                    <img src="../Assets/icons8-twitter-50.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/shrishail356/" target="_blank">
+                    <img src="../Assets/icons8-linkedin-50.png"/>
+                </a>
+            </div>
+    </div>
+    
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+            }
+            list.forEach((item) => {
+            item.addEventListener('click', activeLink);
+            });
+        </script>
+    </div>
+</body>
